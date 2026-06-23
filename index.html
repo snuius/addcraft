@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddCraft | Minecraft Addon Maker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bg.jpg') center/cover fixed; 
+            color: #e4e4e7;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="flex-1 flex flex-col items-center justify-center p-10 text-center">
+        <h1 class="text-6xl font-extrabold text-white mb-4 tracking-tighter">AddCraft <span class="text-emerald-500">Addon Maker</span></h1>
+        <p class="text-xl text-zinc-300 max-w-2xl mb-8">The ultimate, user-friendly desktop tool to design, build, and compile custom Minecraft Bedrock Edition addons without the headache of manual JSON editing.</p>
+        
+        <div class="flex gap-4">
+            <a href="#" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl">Download</a>
+        </div>
+    </header>
+
+    <section id="features" class="bg-zinc-950/80 p-12 backdrop-blur-sm border-t border-zinc-800">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
+                <h3 class="text-emerald-400 font-bold mb-2">Drag & Drop</h3>
+                <p class="text-sm text-zinc-400">Manage your assets, textures, and models with a simple, intuitive interface.</p>
+            </div>
+            <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
+                <h3 class="text-emerald-400 font-bold mb-2">Automated Build</h3>
+                <p class="text-sm text-zinc-400">One-click compilation into ready-to-import .mcaddon files for Bedrock.</p>
+            </div>
+            <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
+                <h3 class="text-emerald-400 font-bold mb-2">Scripting Ready</h3>
+                <p class="text-sm text-zinc-400">Native support for custom TypeScript/JavaScript modules with experimental API support.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-8 text-center border-t border-zinc-800 bg-black/50">
+        <p class="text-zinc-500 text-sm mb-2">Built by Snujus &copy; 2026</p>
+        <button onclick="showContact()" class="text-emerald-400 hover:text-emerald-300 font-medium text-sm transition">
+            Contact Support
+        </button>
+        <p id="discord-tag" class="hidden mt-2 text-white font-mono bg-zinc-800 inline-block px-3 py-1 rounded">Discord: @_snujus_</p>
+    </footer>
+
+    <script>
+        function showContact() {
+            document.getElementById('discord-tag').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
