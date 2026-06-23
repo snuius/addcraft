@@ -1,0 +1,2 @@
+AddCraft_orginal.exe filter=lfs diff=lfs merge=lfs -text
+AddCraft.exe filter=lfs diff=lfs merge=lfs -text
